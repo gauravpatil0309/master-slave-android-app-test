@@ -16,12 +16,6 @@ pipeline {
       }
     }
     
-    stage("Git Checkout") {
-            steps {
-                git branch: 'master',
-                url: "https://github.com/gauravpatil0309/android-hello-world.git"
-            }
-        }
   
     stage('Build') {
        steps {
